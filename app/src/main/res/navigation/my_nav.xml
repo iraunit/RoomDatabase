@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.shyptsolution.roomdatabase.ListFragment"
-        android:label="fragment_list"
-        tools:layout="@layout/fragment_list" >
+        android:label="List"
+        tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/action_listFragment_to_addFragment"
             app:destination="@id/addFragment"
@@ -19,10 +19,12 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.shyptsolution.roomdatabase.addFragment"
-        android:label="fragment_add"
-        tools:layout="@layout/fragment_add" >
+        android:label="Add Notes"
+        tools:layout="@layout/fragment_add">
         <action
             android:id="@+id/action_addFragment_to_listFragment"
-            app:destination="@id/listFragment" />
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
 </navigation>
